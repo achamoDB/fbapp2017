@@ -6,6 +6,7 @@ var my_http = require("http"),
 	filesys = require("fs");
 
 function load_file(my_path,response){
+  my_path = my_path || "index.html";
   var full_path = path.join(root,my_path);
   console.log("full_path=", full_path);
   filesys.exists(full_path,function(exists){
