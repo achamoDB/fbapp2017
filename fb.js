@@ -78,7 +78,7 @@ window.fbAsyncInit = function() {
 function testAPI(response) {
   console.log('Welcome!  Fetching your information.... ');
   document.querySelector("#box3").innerHTML = "Access token<br>" + response.authResponse.accessToken;
-  FB.api('/me', function(response) {
+  FB.api('/me?fields=email,education', function(response) {
     console.log(response);
     console.log('Successful login for: ' + response.name);
     document.getElementById('status').innerHTML =
