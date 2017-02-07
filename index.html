@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="styles.css">
+
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -90,8 +92,29 @@
   data-show-faces="true">
 </div>
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
+<div id="container">
+	<div id="box1" class="fadein1" style="margin-top: 30px;">
+		<span class="maintitle">Social Robot</span>
+		<div style="text-align: right;"> 
+			<img src="http://agnosticit.com/wp-content/uploads/2016/10/LOGO-AGN-1.png" width="150px">
+		</div>
+		<br>
+		<div class="innertext">
+		Esta aplicación permite mostrar los beneficios que el mecanismo de <i>Social Login</i> puede ofrecer a su empresa, a través del enriquecimiento de datos y su procesamiento posterior, en la modalidad que denominamos <i>"Agnostic as a Service"</i>
+		</div>	
+	</div>
+	<br>
+	<div id="box2" class="fadein2">
+		<div class="innertext">
+		En la aplicación mobile o sitio web de su empresa se puede incorporar un mecanismo de autenticación integrado, por ejemplo, a <span style="color: blue; font-weight: bold;">Facebook</span>
+		<div style="text-align: right;">
+			<span style="font-size: 14px;">Haga click aquí</span>&nbsp;&nbsp;&rarr;&nbsp;&nbsp;
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+		</div>
+		</div>	
+	</div>
+</div>
 
 <div id="status">
 </div>
