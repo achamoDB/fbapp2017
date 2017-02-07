@@ -24,10 +24,10 @@ function load_file(my_path,response){
           
            }  
          else{
-	  var contentType = "text/plain";
-	  if (full_path.match(/\.css^/)) contentType = "text/css"; 
-	  else if (full_path.match(/\.js^/)) contentType = "text/javascript"; 
-          response.writeHeader(200, {"Content-Type": contentType});  
+	  var contentType = null;
+	  if (full_path.match(/\.css^/)) contentType = {"Content-Type": "text/css"}; 
+	  else if (full_path.match(/\.js^/)) contentType = {"Content-Type": "text/javascript"}; 
+          response.writeHeader(200, contentType);  
               response.write(file, "binary");  
               response.end();
         }
