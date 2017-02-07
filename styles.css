@@ -26,6 +26,10 @@ body {
 	color: black;
 	padding: 20px;
 }
+#box3 {
+	text-align: left;
+	word-wrap: break-word;
+}
 .maintitle {
 	font-family: Verdana;
 	font-size: 44px;
